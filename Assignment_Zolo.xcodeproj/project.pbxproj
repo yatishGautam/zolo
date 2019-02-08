@@ -14,6 +14,9 @@
 		3A0CC535220CA660008FD63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC534220CA660008FD63C /* Assets.xcassets */; };
 		3A0CC538220CA660008FD63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC536220CA660008FD63C /* LaunchScreen.storyboard */; };
 		3A0CC54E220CA660008FD63C /* Assignment_ZoloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */; };
+		9F6FBB92E5F3B43AFA4D685E /* Pods_Assignment_ZoloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */; };
+		CF12A70AD67CA002ADA08DE9 /* Pods_Assignment_ZoloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58601521ADC27AD4D6E86919 /* Pods_Assignment_ZoloTests.framework */; };
+		FA09D494B98BD8BD24D0ED81 /* Pods_Assignment_Zolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFDC61F33EA0531F0C9695C /* Pods_Assignment_Zolo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A066059C8A7CB8A9FD5C2E2 /* Pods-Assignment_ZoloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloTests/Pods-Assignment_ZoloTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A0CC527220CA65F008FD63C /* Assignment_Zolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_Zolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0CC52A220CA65F008FD63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0CC52C220CA65F008FD63C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 		3A0CC549220CA660008FD63C /* Assignment_ZoloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_ZoloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_ZoloUITests.swift; sourceTree = "<group>"; };
 		3A0CC54F220CA660008FD63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C30518CAA59B18CB9AA7DF1 /* Pods-Assignment_ZoloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.release.xcconfig"; sourceTree = "<group>"; };
+		470E6708E5DE7D5F317611D4 /* Pods-Assignment_ZoloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_ZoloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58601521ADC27AD4D6E86919 /* Pods_Assignment_ZoloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_ZoloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFDC61F33EA0531F0C9695C /* Pods_Assignment_Zolo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Zolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDB55B30A6DCF2869BBB40F /* Pods-Assignment_ZoloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloTests/Pods-Assignment_ZoloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4041DF79E358ABECBC622D /* Pods-Assignment_Zolo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_Zolo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_Zolo/Pods-Assignment_Zolo.release.xcconfig"; sourceTree = "<group>"; };
+		F407CAD2DC8CA2200769E551 /* Pods-Assignment_Zolo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_Zolo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_Zolo/Pods-Assignment_Zolo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA09D494B98BD8BD24D0ED81 /* Pods_Assignment_Zolo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF12A70AD67CA002ADA08DE9 /* Pods_Assignment_ZoloTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6FBB92E5F3B43AFA4D685E /* Pods_Assignment_ZoloUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,8 @@
 				3A0CC529220CA65F008FD63C /* Assignment_Zolo */,
 				3A0CC54C220CA660008FD63C /* Assignment_ZoloUITests */,
 				3A0CC528220CA65F008FD63C /* Products */,
+				DB072A9C1A09282B08C019AF /* Pods */,
+				8EFE1302A85155264905A246 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +132,29 @@
 			path = Assignment_ZoloUITests;
 			sourceTree = "<group>";
 		};
+		8EFE1302A85155264905A246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFDC61F33EA0531F0C9695C /* Pods_Assignment_Zolo.framework */,
+				58601521ADC27AD4D6E86919 /* Pods_Assignment_ZoloTests.framework */,
+				54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB072A9C1A09282B08C019AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F407CAD2DC8CA2200769E551 /* Pods-Assignment_Zolo.debug.xcconfig */,
+				AF4041DF79E358ABECBC622D /* Pods-Assignment_Zolo.release.xcconfig */,
+				7BDB55B30A6DCF2869BBB40F /* Pods-Assignment_ZoloTests.debug.xcconfig */,
+				3A066059C8A7CB8A9FD5C2E2 /* Pods-Assignment_ZoloTests.release.xcconfig */,
+				470E6708E5DE7D5F317611D4 /* Pods-Assignment_ZoloUITests.debug.xcconfig */,
+				3C30518CAA59B18CB9AA7DF1 /* Pods-Assignment_ZoloUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0CC552220CA660008FD63C /* Build configuration list for PBXNativeTarget "Assignment_Zolo" */;
 			buildPhases = (
+				51956CE4A18E51024496CE76 /* [CP] Check Pods Manifest.lock */,
 				3A0CC523220CA65F008FD63C /* Sources */,
 				3A0CC524220CA65F008FD63C /* Frameworks */,
 				3A0CC525220CA65F008FD63C /* Resources */,
+				CE766E6242454F995E9E4B83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0CC555220CA660008FD63C /* Build configuration list for PBXNativeTarget "Assignment_ZoloTests" */;
 			buildPhases = (
+				499A7732647A462A312DEA67 /* [CP] Check Pods Manifest.lock */,
 				3A0CC53A220CA660008FD63C /* Sources */,
 				3A0CC53B220CA660008FD63C /* Frameworks */,
 				3A0CC53C220CA660008FD63C /* Resources */,
@@ -157,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0CC558220CA660008FD63C /* Build configuration list for PBXNativeTarget "Assignment_ZoloUITests" */;
 			buildPhases = (
+				F1ADEB5FE302BCAC15F38595 /* [CP] Check Pods Manifest.lock */,
 				3A0CC545220CA660008FD63C /* Sources */,
 				3A0CC546220CA660008FD63C /* Frameworks */,
 				3A0CC547220CA660008FD63C /* Resources */,
@@ -240,6 +284,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		499A7732647A462A312DEA67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assignment_ZoloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51956CE4A18E51024496CE76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assignment_Zolo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE766E6242454F995E9E4B83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Assignment_Zolo/Pods-Assignment_Zolo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Assignment_Zolo/Pods-Assignment_Zolo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1ADEB5FE302BCAC15F38595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assignment_ZoloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A0CC523220CA65F008FD63C /* Sources */ = {
@@ -420,6 +557,7 @@
 		};
 		3A0CC553220CA660008FD63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F407CAD2DC8CA2200769E551 /* Pods-Assignment_Zolo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +575,7 @@
 		};
 		3A0CC554220CA660008FD63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4041DF79E358ABECBC622D /* Pods-Assignment_Zolo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +593,7 @@
 		};
 		3A0CC556220CA660008FD63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDB55B30A6DCF2869BBB40F /* Pods-Assignment_ZoloTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +614,7 @@
 		};
 		3A0CC557220CA660008FD63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A066059C8A7CB8A9FD5C2E2 /* Pods-Assignment_ZoloTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +635,7 @@
 		};
 		3A0CC559220CA660008FD63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470E6708E5DE7D5F317611D4 /* Pods-Assignment_ZoloUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +655,7 @@
 		};
 		3A0CC55A220CA660008FD63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C30518CAA59B18CB9AA7DF1 /* Pods-Assignment_ZoloUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
