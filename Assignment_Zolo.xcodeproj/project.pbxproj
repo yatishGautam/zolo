@@ -13,7 +13,6 @@
 		3A0CC533220CA65F008FD63C /* Assignment_Zolo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC531220CA65F008FD63C /* Assignment_Zolo.xcdatamodeld */; };
 		3A0CC535220CA660008FD63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC534220CA660008FD63C /* Assets.xcassets */; };
 		3A0CC538220CA660008FD63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC536220CA660008FD63C /* LaunchScreen.storyboard */; };
-		3A0CC543220CA660008FD63C /* Assignment_ZoloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC542220CA660008FD63C /* Assignment_ZoloTests.swift */; };
 		3A0CC54E220CA660008FD63C /* Assignment_ZoloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +43,6 @@
 		3A0CC537220CA660008FD63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0CC539220CA660008FD63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0CC53E220CA660008FD63C /* Assignment_ZoloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_ZoloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A0CC542220CA660008FD63C /* Assignment_ZoloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_ZoloTests.swift; sourceTree = "<group>"; };
-		3A0CC544220CA660008FD63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0CC549220CA660008FD63C /* Assignment_ZoloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_ZoloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_ZoloUITests.swift; sourceTree = "<group>"; };
 		3A0CC54F220CA660008FD63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				3A0CC529220CA65F008FD63C /* Assignment_Zolo */,
-				3A0CC541220CA660008FD63C /* Assignment_ZoloTests */,
 				3A0CC54C220CA660008FD63C /* Assignment_ZoloUITests */,
 				3A0CC528220CA65F008FD63C /* Products */,
 			);
@@ -108,15 +104,6 @@
 				3A0CC531220CA65F008FD63C /* Assignment_Zolo.xcdatamodeld */,
 			);
 			path = Assignment_Zolo;
-			sourceTree = "<group>";
-		};
-		3A0CC541220CA660008FD63C /* Assignment_ZoloTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A0CC542220CA660008FD63C /* Assignment_ZoloTests.swift */,
-				3A0CC544220CA660008FD63C /* Info.plist */,
-			);
-			path = Assignment_ZoloTests;
 			sourceTree = "<group>";
 		};
 		3A0CC54C220CA660008FD63C /* Assignment_ZoloUITests */ = {
@@ -269,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0CC543220CA660008FD63C /* Assignment_ZoloTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
