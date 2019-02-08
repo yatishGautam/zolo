@@ -14,6 +14,9 @@
 		3A0CC535220CA660008FD63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC534220CA660008FD63C /* Assets.xcassets */; };
 		3A0CC538220CA660008FD63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CC536220CA660008FD63C /* LaunchScreen.storyboard */; };
 		3A0CC54E220CA660008FD63C /* Assignment_ZoloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */; };
+		3A0CC560220D697C008FD63C /* DetailText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC55F220D697C008FD63C /* DetailText.swift */; };
+		3A0CC564220D6E42008FD63C /* textCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC563220D6E42008FD63C /* textCollectionCell.swift */; };
+		3A0CC566220D6E5F008FD63C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC565220D6E5F008FD63C /* ImageCollectionViewCell.swift */; };
 		9F6FBB92E5F3B43AFA4D685E /* Pods_Assignment_ZoloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */; };
 		CF12A70AD67CA002ADA08DE9 /* Pods_Assignment_ZoloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58601521ADC27AD4D6E86919 /* Pods_Assignment_ZoloTests.framework */; };
 		FA09D494B98BD8BD24D0ED81 /* Pods_Assignment_Zolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFDC61F33EA0531F0C9695C /* Pods_Assignment_Zolo.framework */; };
@@ -50,6 +53,9 @@
 		3A0CC549220CA660008FD63C /* Assignment_ZoloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment_ZoloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0CC54D220CA660008FD63C /* Assignment_ZoloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_ZoloUITests.swift; sourceTree = "<group>"; };
 		3A0CC54F220CA660008FD63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0CC55F220D697C008FD63C /* DetailText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailText.swift; sourceTree = "<group>"; };
+		3A0CC563220D6E42008FD63C /* textCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textCollectionCell.swift; sourceTree = "<group>"; };
+		3A0CC565220D6E5F008FD63C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C30518CAA59B18CB9AA7DF1 /* Pods-Assignment_ZoloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.release.xcconfig"; sourceTree = "<group>"; };
 		470E6708E5DE7D5F317611D4 /* Pods-Assignment_ZoloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_ZoloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,8 +118,12 @@
 		3A0CC529220CA65F008FD63C /* Assignment_Zolo */ = {
 			isa = PBXGroup;
 			children = (
+				3A0CC562220D6DE2008FD63C /* collectionViewCell */,
+				3A0CC55E220D6938008FD63C /* services */,
+				3A0CC55C220D691B008FD63C /* view */,
+				3A0CC55B220D6909008FD63C /* model */,
+				3A0CC55D220D6927008FD63C /* controller */,
 				3A0CC52A220CA65F008FD63C /* AppDelegate.swift */,
-				3A0CC52C220CA65F008FD63C /* ViewController.swift */,
 				3A0CC52E220CA65F008FD63C /* Main.storyboard */,
 				3A0CC534220CA660008FD63C /* Assets.xcassets */,
 				3A0CC536220CA660008FD63C /* LaunchScreen.storyboard */,
@@ -130,6 +140,45 @@
 				3A0CC54F220CA660008FD63C /* Info.plist */,
 			);
 			path = Assignment_ZoloUITests;
+			sourceTree = "<group>";
+		};
+		3A0CC55B220D6909008FD63C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3A0CC55C220D691B008FD63C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3A0CC55D220D6927008FD63C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A0CC52C220CA65F008FD63C /* ViewController.swift */,
+				3A0CC55F220D697C008FD63C /* DetailText.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		3A0CC55E220D6938008FD63C /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		3A0CC562220D6DE2008FD63C /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A0CC563220D6E42008FD63C /* textCollectionCell.swift */,
+				3A0CC565220D6E5F008FD63C /* ImageCollectionViewCell.swift */,
+			);
+			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
 		8EFE1302A85155264905A246 /* Frameworks */ = {
@@ -383,9 +432,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0CC566220D6E5F008FD63C /* ImageCollectionViewCell.swift in Sources */,
 				3A0CC52D220CA65F008FD63C /* ViewController.swift in Sources */,
 				3A0CC52B220CA65F008FD63C /* AppDelegate.swift in Sources */,
+				3A0CC564220D6E42008FD63C /* textCollectionCell.swift in Sources */,
 				3A0CC533220CA65F008FD63C /* Assignment_Zolo.xcdatamodeld in Sources */,
+				3A0CC560220D697C008FD63C /* DetailText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
