@@ -55,14 +55,26 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hXh-Zd-Rkk">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hXh-Zd-Rkk" customClass="textCollectionCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="148" height="131"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-IC-2Hx">
+                                                    <rect key="frame" x="53" y="55" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstItem="Yjd-IC-2Hx" firstAttribute="centerY" secondItem="hXh-Zd-Rkk" secondAttribute="centerY" id="0Je-27-rfr"/>
+                                            <constraint firstItem="Yjd-IC-2Hx" firstAttribute="centerX" secondItem="hXh-Zd-Rkk" secondAttribute="centerX" id="ord-10-pe3"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -85,13 +97,46 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fcx-0J-mE8">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fcx-0J-mE8" customClass="ImageCollectionViewCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="185"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="154" height="185"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-mH-PcT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="185"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-gl-bhb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="154" height="92.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt4-jy-8O4">
+                                                            <rect key="frame" x="0.0" y="92.5" width="154" height="92.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="lt4-jy-8O4" firstAttribute="top" secondItem="oSD-gl-bhb" secondAttribute="bottom" id="MJV-5L-k5y"/>
+                                                        <constraint firstItem="lt4-jy-8O4" firstAttribute="leading" secondItem="b1N-mH-PcT" secondAttribute="leading" id="PyO-fO-807"/>
+                                                        <constraint firstItem="oSD-gl-bhb" firstAttribute="leading" secondItem="b1N-mH-PcT" secondAttribute="leading" id="TaH-ct-Pis"/>
+                                                        <constraint firstItem="oSD-gl-bhb" firstAttribute="height" secondItem="b1N-mH-PcT" secondAttribute="height" multiplier="0.5" id="Uvs-qU-HJM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oSD-gl-bhb" secondAttribute="trailing" id="VrN-c3-MH1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="lt4-jy-8O4" secondAttribute="bottom" id="esR-bf-wjo"/>
+                                                        <constraint firstItem="oSD-gl-bhb" firstAttribute="top" secondItem="b1N-mH-PcT" secondAttribute="top" id="qAs-9g-3E8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lt4-jy-8O4" secondAttribute="trailing" id="t1J-2A-GqD"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="b1N-mH-PcT" firstAttribute="top" secondItem="fcx-0J-mE8" secondAttribute="top" id="8gd-iI-cA8"/>
+                                            <constraint firstAttribute="trailing" secondItem="b1N-mH-PcT" secondAttribute="trailing" id="Etc-Fm-T3G"/>
+                                            <constraint firstAttribute="bottom" secondItem="b1N-mH-PcT" secondAttribute="bottom" id="He5-nZ-Cof"/>
+                                            <constraint firstItem="b1N-mH-PcT" firstAttribute="leading" secondItem="fcx-0J-mE8" secondAttribute="leading" id="TSu-UZ-O06"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
