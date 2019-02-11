@@ -54,7 +54,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
             let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
             Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
             Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
-            Cell2.layer.borderColor = UIColor.black
+            Cell2.layer.borderColor = UIColor.black.cgColor
             Cell2.layer.borderWidth = 1
             Cell2.layer.cornerRadius = 5
             
