@@ -19,6 +19,7 @@
 		3A0CC566220D6E5F008FD63C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CC565220D6E5F008FD63C /* ImageCollectionViewCell.swift */; };
 		3A47671022118083004CAD2A /* services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47670F22118082004CAD2A /* services.swift */; };
 		3A476712221182BB004CAD2A /* textDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A476711221182BB004CAD2A /* textDataClass.swift */; };
+		3A476714221193B6004CAD2A /* imageCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A476713221193B6004CAD2A /* imageCollectionClass.swift */; };
 		9F6FBB92E5F3B43AFA4D685E /* Pods_Assignment_ZoloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */; };
 		CF12A70AD67CA002ADA08DE9 /* Pods_Assignment_ZoloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58601521ADC27AD4D6E86919 /* Pods_Assignment_ZoloTests.framework */; };
 		FA09D494B98BD8BD24D0ED81 /* Pods_Assignment_Zolo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFDC61F33EA0531F0C9695C /* Pods_Assignment_Zolo.framework */; };
@@ -60,6 +61,7 @@
 		3A0CC565220D6E5F008FD63C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A47670F22118082004CAD2A /* services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = services.swift; sourceTree = "<group>"; };
 		3A476711221182BB004CAD2A /* textDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = textDataClass.swift; path = Assignment_Zolo/model/textDataClass.swift; sourceTree = SOURCE_ROOT; };
+		3A476713221193B6004CAD2A /* imageCollectionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCollectionClass.swift; sourceTree = "<group>"; };
 		3C30518CAA59B18CB9AA7DF1 /* Pods-Assignment_ZoloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.release.xcconfig"; sourceTree = "<group>"; };
 		470E6708E5DE7D5F317611D4 /* Pods-Assignment_ZoloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment_ZoloUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Assignment_ZoloUITests/Pods-Assignment_ZoloUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54CE70E9A5E2761A72949B42 /* Pods_Assignment_ZoloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_ZoloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +126,6 @@
 			children = (
 				3A0CC562220D6DE2008FD63C /* collectionViewCell */,
 				3A0CC55E220D6938008FD63C /* services */,
-				3A0CC55C220D691B008FD63C /* view */,
 				3A0CC55B220D6909008FD63C /* model */,
 				3A0CC55D220D6927008FD63C /* controller */,
 				3A0CC52A220CA65F008FD63C /* AppDelegate.swift */,
@@ -150,15 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				3A476711221182BB004CAD2A /* textDataClass.swift */,
+				3A476713221193B6004CAD2A /* imageCollectionClass.swift */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		3A0CC55C220D691B008FD63C /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		3A0CC55D220D6927008FD63C /* controller */ = {
@@ -439,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0CC566220D6E5F008FD63C /* ImageCollectionViewCell.swift in Sources */,
+				3A476714221193B6004CAD2A /* imageCollectionClass.swift in Sources */,
 				3A0CC52D220CA65F008FD63C /* ViewController.swift in Sources */,
 				3A0CC52B220CA65F008FD63C /* AppDelegate.swift in Sources */,
 				3A476712221182BB004CAD2A /* textDataClass.swift in Sources */,

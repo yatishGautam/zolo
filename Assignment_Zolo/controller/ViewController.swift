@@ -8,48 +8,72 @@
 
 import UIKit
 
-class firstScreen: UIViewController {
-
+class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+   
+    
+    @IBOutlet weak var textCollectionView: UICollectionView!
+    @IBOutlet weak var imageCollectionView: UICollectionView!
+    var recievedText : [textData] = []
+    var recievedTextWithImage : [textImageData] = []
     override func viewDidLoad() {
+        textCollectionView.delegate = self
+        imageCollectionView.delegate = self
+        getText()
+        getImageText()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //mark :- collection view functions
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == textCollectionView{
+            return recievedText.count
+        }else if collectionView == imageCollectionView{
+            return recievedTextWithImage.count
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
+    
     
     func getText(){
-        // get cars data
+        // get text data
         getTextData{(response,statusCode , error) in
             if (error != nil){
-               print("error")
+                print("error")
             }else{
-                // print(response!["response"]!!["serviceCities"])
-                guard let responseObj = response?["response"] as? NSDictionary else {
+                guard let textDictionary = response as? [NSDictionary] else {
                     print("no data recieved")
                     return
                 }
-                guard let cityLocationData = responseObj["serviceCities"] as? [NSDictionary] else {
-                    print("no data recieved")
-                    return
-                }
-                guard let urlArray = responseObj["banners"] as? [NSDictionary] else {
-                    print("no data recieved")
-                    return
-                }
-                if urlArray != nil{
-                    var count = 0
-                    for image in urlArray{
-                        self.bannerURL += [bannerImage(data: image)]
+                    for text in textDictionary{
+                        self.recievedText += [textData(data: text)]
                     }
-                    //                        for banner in self.bannerURL{
-                    //                            if banner.isActive! == 1{
-                    //                            self.urlArray.append(banner.imageURL!)
-                    //                            }
-                    //                        }
-                    self.setupScrollView(Banners: self.createBanners())
+                
+            }
+        }
+    }
+    
+    
+    func getImageText(){
+        // get text data
+        getTextDataWithImage{(response,statusCode , error) in
+            if (error != nil){
+                print("error")
+            }else{
+                guard let textDictionary = response as? [NSDictionary] else {
+                    print("no data recieved")
+                    return
                 }
+                    for text in textDictionary{
+                        self.recievedTextWithImage += [textImageData(data: text)]
+                    }
 
             }
-            //        self.dynamicFieldsData = DynamicFields(data:response!["data"] as! NSDictionary)
         }
     }
 

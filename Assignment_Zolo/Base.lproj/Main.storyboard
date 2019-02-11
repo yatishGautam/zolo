@@ -77,6 +77,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3kM-ao-UYc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0U9-lU-6P5"/>
+                                </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text data with image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVK-R5-rlF">
                                 <rect key="frame" x="10" y="322" width="355" height="21"/>
@@ -139,6 +143,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="umg-5d-dyM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9uh-Zx-KhJ"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -162,6 +170,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageCollectionView" destination="Pgt-Be-Izc" id="m22-Iz-dEv"/>
+                        <outlet property="textCollectionView" destination="Xg6-wS-eUX" id="dWJ-dX-Qe3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
