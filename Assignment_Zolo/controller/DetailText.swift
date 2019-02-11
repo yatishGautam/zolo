@@ -21,15 +21,15 @@ class detailText: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        intiateUIElements()
+        intiateUIElements() //intitiase ui elements
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+         self.dismiss(animated: true, completion: nil) //go back to screen 1
     }
     
-    func intiateUIElements(){
+    func intiateUIElements(){ //adding texts
         self.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
         self.titleView.text = titleText
         self.subText1.text = subText

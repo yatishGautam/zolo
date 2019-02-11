@@ -62,11 +62,11 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     //delegate function to access next screen based on the tab clicked now
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == imageCollectionView{
-        let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: "detailText") as! detailText
+        let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: "detailText") as! detailText //making object of screen 2
         detailScreen.imageURL = self.imageURL
         detailScreen.titleText = recievedTextWithImage[indexPath.row].title!
-        detailScreen.subText = recievedTextWithImage[indexPath.row].body!
-             self.present(detailScreen, animated: true, completion: nil)
+        detailScreen.subText = recievedTextWithImage[indexPath.row].body! //initalising data
+             self.present(detailScreen, animated: true, completion: nil)//showing 2nd screen
         }
     }
     
