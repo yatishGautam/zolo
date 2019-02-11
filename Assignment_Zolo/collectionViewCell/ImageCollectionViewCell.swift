@@ -17,7 +17,6 @@ class ImageCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.mainView.layer.cornerRadius = 5
-        //self.imageView.sd_setImage(with: URL(self.imageURL), completed: nil)
     }
     
 }

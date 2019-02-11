@@ -15,16 +15,12 @@ class textData{
     var title = "" as String?
     var completed = false as Bool?
     
-    init(data city: NSDictionary)
+    init(data text: NSDictionary)
     {
-        guard let textDetails = city["coordinates"] as? NSDictionary else {
-            print("no coordinate in this city")
-            return
-        }
-        self.id = textDetails["id"] as? Int
-        self.userId = textDetails["userId"] as? Int
-        self.title = textDetails["title"] as? String
-        self.completed = textDetails["completed"] as? Bool
+        self.id = text["id"] as? Int
+        self.userId = text["userId"] as? Int
+        self.title = text["title"] as? String
+        self.completed = text["completed"] as? Bool
     }
 }
 

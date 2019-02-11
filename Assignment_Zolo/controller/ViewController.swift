@@ -21,12 +21,13 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     var recievedText : [textData] = []
     var recievedTextWithImage : [textImageData] = []
-    var imageURL = URL(string: "")
+    var imageURL = URL(string: "https://homepages.cae.wisc.edu/~ece533/images/watch.png")
     override func viewDidLoad() {
         textCollectionView.delegate = self
         imageCollectionView.delegate = self
         getText()
         getImageText()
+        UIChanges()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -54,11 +55,13 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     //delegate function to access next screen based on the tab clicked now
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == imageCollectionView{
         let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: "detailText") as! detailText
         detailScreen.imageURL = self.imageURL
         detailScreen.titleText = recievedTextWithImage[indexPath.row].title!
         detailScreen.subText = recievedTextWithImage[indexPath.row].body!
         self.navigationController?.pushViewController(detailScreen, animated: false)
+        }
     }
     
     
@@ -100,6 +103,11 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         }
     }
 
+    func UIChanges(){
+        self.HeadingLabel.text = "Assignment"
+        self.subText1.text  = "Text Data"
+        self.subText2.text  = "Text Data with Image"
+    }
 
 }
 

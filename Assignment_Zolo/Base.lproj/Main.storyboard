@@ -55,7 +55,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hXh-Zd-Rkk" userLabel="textCollectionCell" customClass="textCollectionCell" customModule="Assignment_Zolo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="textCollectionCell" reuseIdentifier="textCollectionCell" id="hXh-Zd-Rkk" userLabel="textCollectionCell" customClass="textCollectionCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -104,7 +104,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fcx-0J-mE8" userLabel="ImageCollectionViewCell" customClass="ImageCollectionViewCell" customModule="Assignment_Zolo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCollectionViewCell" reuseIdentifier="ImageCollectionViewCell" id="fcx-0J-mE8" userLabel="ImageCollectionViewCell" customClass="ImageCollectionViewCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="185"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

@@ -14,15 +14,11 @@ class textImageData{
     var title = "" as String?
     var body = "" as String?
     
-    init(data city: NSDictionary)
+    init(data text: NSDictionary)
     {
-        guard let textDetails = city["coordinates"] as? NSDictionary else {
-            print("no coordinate in this city")
-            return
-        }
-        self.id = textDetails["id"] as? Int
-        self.userId = textDetails["userId"] as? Int
-        self.title = textDetails["title"] as? String
-        self.body = textDetails["body"] as? String
+        self.id = text["id"] as? Int
+        self.userId = text["userId"] as? Int
+        self.title = text["title"] as? String
+        self.body = text["body"] as? String
     }
 }
