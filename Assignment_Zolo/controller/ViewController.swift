@@ -21,6 +21,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     var recievedText : [textData] = []
     var recievedTextWithImage : [textImageData] = []
+    var imageURL = URL(string: "")
     override func viewDidLoad() {
         textCollectionView.delegate = self
         imageCollectionView.delegate = self
@@ -34,22 +35,30 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == textCollectionView{
             return recievedText.count
-        }else if collectionView == imageCollectionView{
+        }else{
             return recievedTextWithImage.count
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == textCollectionView{
-            return
-        }
-        if collectionView == imageCollectionView{
-            return
+            let Cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "textCollectionCell", for: indexPath) as! textCollectionCell
+            Cell1.textLabel.text = recievedText[indexPath.row].title
+            return Cell1
+        }else{
+            let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
+            Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
+            Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
+            return Cell2
         }
     }
     //delegate function to access next screen based on the tab clicked now
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        let detailScreen = self.storyboard?.instantiateViewController(withIdentifier: "detailText") as! detailText
+        detailScreen.imageURL = self.imageURL
+        detailScreen.titleText = recievedTextWithImage[indexPath.row].title!
+        detailScreen.subText = recievedTextWithImage[indexPath.row].body!
+        self.navigationController?.pushViewController(detailScreen, animated: false)
     }
     
     

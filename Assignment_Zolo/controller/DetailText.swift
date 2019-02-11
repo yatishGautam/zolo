@@ -15,7 +15,9 @@ class detailText: UIViewController {
     @IBOutlet weak var subText1: UILabel!
     @IBOutlet weak var returnButton: UIButton!
     
-    
+    var imageURL = URL(string: "")
+    var titleText = ""
+    var subText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,14 @@ class detailText: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
+         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func intiateUIElements(){
+        self.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
+        self.titleView.text = titleText
+        self.subText1.text = subText
+        returnButton.setTitle("Appriciate It", for: .normal)
     }
     
 }
