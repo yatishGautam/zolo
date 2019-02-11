@@ -238,7 +238,6 @@
                                     <constraint firstItem="JEF-Mt-PfP" firstAttribute="width" secondItem="aeS-NY-nfe" secondAttribute="width" id="c7P-0A-lUa"/>
                                     <constraint firstItem="JEF-Mt-PfP" firstAttribute="centerY" secondItem="aeS-NY-nfe" secondAttribute="centerY" id="flL-FI-2Eu"/>
                                     <constraint firstAttribute="bottom" secondItem="JEF-Mt-PfP" secondAttribute="bottom" id="nOV-B4-FmZ"/>
-                                    <constraint firstItem="JEF-Mt-PfP" firstAttribute="height" secondItem="aeS-NY-nfe" secondAttribute="height" id="qc5-NC-fDE"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
