@@ -47,7 +47,6 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         if collectionView == textCollectionView{
             let Cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "textCollectionCell", for: indexPath) as! textCollectionCell
             Cell1.textLabel.text = recievedText[indexPath.row].title
-            Cell1.backgroundColor = UIColor.gray
             Cell1.textLabel.backgroundColor = UIColor.clear
             Cell1.layer.cornerRadius = 5
             return Cell1
@@ -55,6 +54,8 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
             let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
             Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
             Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
+            Cell2.layer.cornerRadius = 5
+            
             return Cell2
         }
     }
