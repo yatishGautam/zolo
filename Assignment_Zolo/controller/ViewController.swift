@@ -28,6 +28,8 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         getText()
         getImageText()
         UIChanges()
+        self.textCollectionView.isPagingEnabled = true
+        self.imageCollectionView.isPagingEnabled = true
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -45,6 +47,9 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         if collectionView == textCollectionView{
             let Cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "textCollectionCell", for: indexPath) as! textCollectionCell
             Cell1.textLabel.text = recievedText[indexPath.row].title
+            Cell1.backgroundColor = UIColor.gray
+            Cell1.textLabel.backgroundColor = UIColor.clear
+            Cell1.layer.cornerRadius = 5
             return Cell1
         }else{
             let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell

@@ -10,5 +10,8 @@ import UIKit
 
 class textCollectionCell: UICollectionViewCell {
     @IBOutlet weak var textLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
 }
