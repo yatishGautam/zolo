@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+import Alamofire //3rd party library to handle networking
 
 func getTextData(completionHandler: @escaping ( _ responseObject: AnyObject?,_ statusCode : Int?,_ error: NSError?) -> ()) {
     Alamofire.request("https://jsonplaceholder.typicode.com/todos",method: .get ,parameters:[:])
