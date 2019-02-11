@@ -54,8 +54,8 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
             let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
             Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
             Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
-            Cell2.layer.borderColor = UIColor.black.cgColor
-            Cell2.layer.borderWidth = 1
+//            Cell2.layer.borderColor = UIColor.black.cgColor
+//            Cell2.layer.borderWidth = 1
             Cell2.layer.cornerRadius = 5
             
             return Cell2
@@ -68,7 +68,8 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         detailScreen.imageURL = self.imageURL
         detailScreen.titleText = recievedTextWithImage[indexPath.row].title!
         detailScreen.subText = recievedTextWithImage[indexPath.row].body!
-        self.navigationController?.pushViewController(detailScreen, animated: false)
+        //self.navigationController?.pushViewController(detailScreen, animated: false)
+             self.present(detailScreen, animated: true, completion: nil)
         }
     }
     
