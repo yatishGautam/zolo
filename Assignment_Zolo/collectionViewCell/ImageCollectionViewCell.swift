@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ImageCollectionViewCell: UICollectionViewCell {
+class ImageCollectionViewCell: UICollectionViewCell { //collection view with image
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var mainView: UIView!

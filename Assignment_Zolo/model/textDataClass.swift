@@ -15,7 +15,7 @@ class textData{
     var title = "" as String?
     var completed = false as Bool?
     
-    init(data text: NSDictionary)
+    init(data text: NSDictionary) //parsing data from dicitionary
     {
         self.id = text["id"] as? Int
         self.userId = text["userId"] as? Int

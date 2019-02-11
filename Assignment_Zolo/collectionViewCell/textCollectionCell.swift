@@ -8,7 +8,7 @@
 
 import UIKit
 
-class textCollectionCell: UICollectionViewCell {
+class textCollectionCell: UICollectionViewCell { //collection view cell for collection view 1
     @IBOutlet weak var textLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -25,9 +25,9 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     override func viewDidLoad() {
         textCollectionView.delegate = self
         imageCollectionView.delegate = self
-        getText()
-        getImageText()
-        UIChanges()
+        getText() //calling api 1
+        getImageText() //calling api 2
+        UIChanges() //adding text to labels
         self.textCollectionView.isPagingEnabled = true
         self.imageCollectionView.isPagingEnabled = true
         super.viewDidLoad()
@@ -44,18 +44,16 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == textCollectionView{
+        if collectionView == textCollectionView{ //initalising cells for collection view 1
             let Cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "textCollectionCell", for: indexPath) as! textCollectionCell
             Cell1.textLabel.text = recievedText[indexPath.row].title
             Cell1.textLabel.backgroundColor = UIColor.clear
             Cell1.layer.cornerRadius = 5
             return Cell1
-        }else{
+        }else{ //cells for collection view 2
             let Cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
             Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
-            Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil)
-//            Cell2.layer.borderColor = UIColor.black.cgColor
-//            Cell2.layer.borderWidth = 1
+            Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil) //using 3rd party library to render images this also handle image cacheing
             Cell2.layer.cornerRadius = 5
             
             return Cell2
@@ -68,7 +66,6 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
         detailScreen.imageURL = self.imageURL
         detailScreen.titleText = recievedTextWithImage[indexPath.row].title!
         detailScreen.subText = recievedTextWithImage[indexPath.row].body!
-        //self.navigationController?.pushViewController(detailScreen, animated: false)
              self.present(detailScreen, animated: true, completion: nil)
         }
     }
@@ -85,7 +82,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
                     return
                 }
                     for text in textDictionary{
-                        self.recievedText += [textData(data: text)]
+                        self.recievedText += [textData(data: text)] //adding data 
                     }
                 self.textCollectionView.reloadData()
                 
@@ -94,7 +91,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     
-    func getImageText(){
+    func getImageText(){ //function to get data for collection view 2
         // get text data
         getTextDataWithImage{(response,statusCode , error) in
             if (error != nil){
@@ -105,9 +102,9 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
                     return
                 }
                     for text in textDictionary{
-                        self.recievedTextWithImage += [textImageData(data: text)]
+                        self.recievedTextWithImage += [textImageData(data: text)] //adding data to the array of object
                     }
-                self.imageCollectionView.reloadData()
+                self.imageCollectionView.reloadData() //refresh data
             }
         }
     }
