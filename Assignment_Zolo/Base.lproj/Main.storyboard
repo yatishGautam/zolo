@@ -55,7 +55,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hXh-Zd-Rkk" customClass="textCollectionCell" customModule="Assignment_Zolo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hXh-Zd-Rkk" userLabel="textCollectionCell" customClass="textCollectionCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -75,6 +75,9 @@
                                             <constraint firstItem="Yjd-IC-2Hx" firstAttribute="centerY" secondItem="hXh-Zd-Rkk" secondAttribute="centerY" id="0Je-27-rfr"/>
                                             <constraint firstItem="Yjd-IC-2Hx" firstAttribute="centerX" secondItem="hXh-Zd-Rkk" secondAttribute="centerX" id="ord-10-pe3"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="textLabel" destination="Yjd-IC-2Hx" id="UWZ-WG-64p"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -101,7 +104,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fcx-0J-mE8" customClass="ImageCollectionViewCell" customModule="Assignment_Zolo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fcx-0J-mE8" userLabel="ImageCollectionViewCell" customClass="ImageCollectionViewCell" customModule="Assignment_Zolo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="185"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -141,6 +144,11 @@
                                             <constraint firstAttribute="bottom" secondItem="b1N-mH-PcT" secondAttribute="bottom" id="He5-nZ-Cof"/>
                                             <constraint firstItem="b1N-mH-PcT" firstAttribute="leading" secondItem="fcx-0J-mE8" secondAttribute="leading" id="TSu-UZ-O06"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="oSD-gl-bhb" id="chM-01-ogy"/>
+                                            <outlet property="mainView" destination="b1N-mH-PcT" id="jXa-qX-geO"/>
+                                            <outlet property="titleLabel" destination="lt4-jy-8O4" id="Ux8-4x-qvp"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -171,7 +179,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="HeadingLabel" destination="oLA-Sl-U34" id="odC-0y-2cJ"/>
+                        <outlet property="headingView" destination="TGb-Mi-MhH" id="h1A-c1-vql"/>
                         <outlet property="imageCollectionView" destination="Pgt-Be-Izc" id="m22-Iz-dEv"/>
+                        <outlet property="subText1" destination="lxu-J7-o43" id="JPo-GK-S8L"/>
+                        <outlet property="subText2" destination="oVK-R5-rlF" id="pRU-eg-tJK"/>
                         <outlet property="textCollectionView" destination="Xg6-wS-eUX" id="dWJ-dX-Qe3"/>
                     </connections>
                 </viewController>
@@ -222,6 +234,9 @@
                                                 <state key="normal" title="ok">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v8S-YY-RMz" eventType="touchUpInside" id="it8-fC-OTa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -262,6 +277,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="94k-Jm-3cT"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="ODI-vx-yEE" id="o9O-3I-A8n"/>
+                        <outlet property="returnButton" destination="6HL-lI-4np" id="PQZ-BM-psG"/>
+                        <outlet property="subText1" destination="LeQ-dl-8Ys" id="EO6-nd-EU8"/>
+                        <outlet property="titleView" destination="4JP-HJ-Fsn" id="eHU-9s-dGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aiq-ae-L4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

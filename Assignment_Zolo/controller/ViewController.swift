@@ -11,8 +11,14 @@ import UIKit
 class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
    
     
+    @IBOutlet weak var headingView: UIView!
+    @IBOutlet weak var HeadingLabel: UILabel!
     @IBOutlet weak var textCollectionView: UICollectionView!
     @IBOutlet weak var imageCollectionView: UICollectionView!
+    
+    @IBOutlet weak var subText1: UILabel!
+    @IBOutlet weak var subText2: UILabel!
+    
     var recievedText : [textData] = []
     var recievedTextWithImage : [textImageData] = []
     override func viewDidLoad() {
@@ -34,10 +40,17 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == textCollectionView{
+            return
+        }
+        if collectionView == imageCollectionView{
+            return
+        }
+    }
+    //delegate function to access next screen based on the tab clicked now
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         <#code#>
     }
-    
-    
     
     
     func getText(){
@@ -53,6 +66,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
                     for text in textDictionary{
                         self.recievedText += [textData(data: text)]
                     }
+                self.textCollectionView.reloadData()
                 
             }
         }
@@ -72,7 +86,7 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
                     for text in textDictionary{
                         self.recievedTextWithImage += [textImageData(data: text)]
                     }
-
+                self.imageCollectionView.reloadData()
             }
         }
     }
