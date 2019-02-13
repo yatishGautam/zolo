@@ -12,6 +12,9 @@ class textCollectionCell: UICollectionViewCell { //collection view cell for coll
     @IBOutlet weak var textLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.textLabel.backgroundColor = UIColor.clear
+        self.layer.cornerRadius = 5
+        self.clipsToBounds = true
     }
     
 }

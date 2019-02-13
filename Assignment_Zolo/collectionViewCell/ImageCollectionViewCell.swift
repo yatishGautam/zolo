@@ -17,6 +17,14 @@ class ImageCollectionViewCell: UICollectionViewCell { //collection view with ima
     override func awakeFromNib() {
         super.awakeFromNib()
         self.mainView.layer.cornerRadius = 5
+        self.layer.cornerRadius = 5
+        self.mainView.clipsToBounds = true
+        self.backgroundColor = UIColor.white
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowRadius = 2
+        self.layer.masksToBounds = false
     }
     
 }
