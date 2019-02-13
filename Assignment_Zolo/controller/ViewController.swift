@@ -55,7 +55,9 @@ class firstScreen: UIViewController, UICollectionViewDelegate, UICollectionViewD
             Cell2.titleLabel.text = recievedTextWithImage[indexPath.row].title
             Cell2.imageView.sd_setImage(with:imageURL, placeholderImage: nil) //using 3rd party library to render images this also handle image cacheing
             Cell2.layer.cornerRadius = 5
-            
+           // Cell2.layer.shadowOffset = CGSizeMake(1, 0)
+            Cell2.layer.shadowColor = UIColor.black.cgColor
+            Cell2.layer.shadowRadius = 2
             return Cell2
         }
     }

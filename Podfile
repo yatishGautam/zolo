@@ -6,7 +6,6 @@ target 'Assignment_Zolo' do
   use_frameworks!
   pod 'Alamofire'
  pod 'SDWebImage', '~> 4.0'
-pod 'SwiftyJSON'
   # Pods for Assignment_Zolo
 
   target 'Assignment_ZoloTests' do
